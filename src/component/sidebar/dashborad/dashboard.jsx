@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-// import wallet from '../sidebar/wallet/wallet'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -11,6 +10,7 @@ import {
   faGear,
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
+import "./dashboard.css";
 function dashboard() {
   return (
       <div className="app-container">
