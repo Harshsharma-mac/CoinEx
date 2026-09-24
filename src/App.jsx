@@ -8,6 +8,7 @@ import Navbar from './component/navbar/navbar'
 import Dashboard from './component/sidebar/dashborad/dashboard'
 import Transaction from './component/sidebar/transactions/transaction'
 import Analytics from './component/sidebar/Analytics/Analytics'
+import Profile from './component/sidebar/profile/profile'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <BrowserRouter>
         <Navbar/>
       <Routes>
+        <Route path="/profile" element={<Profile/>}/>
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/transactions" element={<Transaction />} />
         <Route path="/analytics" element={<Analytics />} />

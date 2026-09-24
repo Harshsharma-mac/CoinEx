@@ -352,12 +352,12 @@ nav {
     transition: var(--transition-slow);
 }
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-8px);
     border-color: rgba(99, 102, 241, 0.4);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(99, 102, 241, 0.15);
     background-color: var(--bg-card-hover);
-}
+} */
 
 /* Card Glow Effect (Reflections) */
 .card::before {
@@ -1453,10 +1453,10 @@ input:disabled+.slider {
     transition: var(--transition-fast);
 }
 
-.btn-filter:hover {
+/* .btn-filter:hover {
     border-color: var(--primary);
     color: var(--text-primary);
-}
+} */
 
 .btn-filter.active {
     background: var(--primary);

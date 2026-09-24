@@ -190,14 +190,9 @@ function Analytics() {
             <div className="asset-progress">
               <span className="other-progress"></span>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
-
       {/* Bottom Section */}
       <div className="analytics-bottom-grid">
 
@@ -231,11 +226,8 @@ function Analytics() {
               <span>Pending</span>
               <strong>10</strong>
             </div>
-
           </div>
-
         </div>
-
 
         {/* Profit & Loss */}
         <div className="analytics-section">
