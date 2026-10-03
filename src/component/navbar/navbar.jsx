@@ -7,7 +7,7 @@ import {
   faBell,
   faMoon
 } from "@fortawesome/free-solid-svg-icons";
-
+import "./navbar.css";
 const navbar = () => {
   return (
     <div>

@@ -27,7 +27,7 @@ function dashboard() {
           <li><a href="/profile"><FontAwesomeIcon icon={faUser} />Profile</a></li>
           <li><a href="/settings"><FontAwesomeIcon icon={faGear} />Settings</a></li>
           <li className="logout">
-            <a href="/logout"><span><FontAwesomeIcon icon={faRightFromBracket} />Logout</span></a>
+            <a href="#"><span><FontAwesomeIcon icon={faRightFromBracket} />Logout</span></a>
           </li>
         </ul>
       </aside>

@@ -5,8 +5,7 @@ import {
   faArrowRightArrowLeft,
   faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
-
-import "./Analytics.css";
+import "./Analytics.css"
 
 function Analytics() {
   return (
