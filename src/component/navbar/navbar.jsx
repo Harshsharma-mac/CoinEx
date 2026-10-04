@@ -7,11 +7,16 @@ import {
   faBell,
   faMoon
 } from "@fortawesome/free-solid-svg-icons";
-import "./navbar.css";
+
+import './navbar.css'
 const navbar = () => {
   return (
     <div>
        <nav>
+          <div className="mobile-logo">
+            <img src="/logo.png" className="logo" alt="CoinEx Logo"/>
+            <h2>Coin<span>Ex</span></h2>
+          </div>
           <div className="search-bar">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
             <input type="text" placeholder="Search anything..." />
@@ -41,3 +46,4 @@ const navbar = () => {
 }
 
 export default navbar
+

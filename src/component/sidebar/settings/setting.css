@@ -1,0 +1,369 @@
+/* ================================
+   SETTINGS PAGE
+================================ */
+
+.settings-page {
+  width: 100%;
+  padding: 32px;
+  background: #f8f8f6;
+  color: #37332d;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.settings-header {
+  margin-bottom: 28px;
+}
+
+.settings-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.settings-header p {
+  margin: 6px 0 0;
+  color: #77736c;
+  font-size: 15px;
+}
+
+
+/* ================================
+   SETTINGS CARD
+================================ */
+
+.settings-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e4e1da;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   CARD TITLE
+================================ */
+
+.settings-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.settings-title h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.settings-title p {
+  margin: 4px 0 0;
+  color: #858179;
+  font-size: 14px;
+}
+
+
+/* Icon */
+
+.settings-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #eaf9f0;
+  color: #16a34a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+
+/* ================================
+   SETTINGS ROW
+================================ */
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 17px 0;
+  border-top: 1px solid #eeeae3;
+}
+
+.settings-row:first-of-type {
+  border-top: none;
+}
+
+.settings-row h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.settings-row p {
+  margin: 5px 0 0;
+  color: #858179;
+  font-size: 13px;
+}
+
+
+/* ================================
+   TOGGLE SWITCH
+================================ */
+
+.toggle {
+  position: relative;
+  width: 46px;
+  height: 25px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle span {
+  position: absolute;
+  cursor: pointer;
+
+  inset: 0;
+
+  background: #d8d5ce;
+  border-radius: 30px;
+
+  transition: 0.25s;
+}
+
+.toggle span::before {
+  content: "";
+
+  position: absolute;
+
+  width: 19px;
+  height: 19px;
+
+  left: 3px;
+  top: 3px;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+  transition: 0.25s;
+}
+
+.toggle input:checked + span {
+  background: #16a34a;
+}
+
+.toggle input:checked + span::before {
+  transform: translateX(21px);
+}
+
+
+/* ================================
+   NETWORK
+================================ */
+
+.network-setting {
+  padding-top: 4px;
+}
+
+.network-setting label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.network-setting select {
+  width: 100%;
+  padding: 13px 14px;
+
+  border: 1px solid #dedad2;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #37332d;
+
+  font-size: 14px;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.network-setting select:focus {
+  border-color: #16a34a;
+}
+
+.network-setting small {
+  display: block;
+  margin-top: 8px;
+
+  color: #858179;
+  font-size: 12px;
+}
+
+
+/* ================================
+   WALLET
+================================ */
+
+.wallet-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px;
+
+  background: #f8f8f6;
+  border: 1px solid #e5e1da;
+  border-radius: 12px;
+}
+
+.wallet-setting h3 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.wallet-setting p {
+  margin: 5px 0 0;
+
+  font-size: 13px;
+  color: #77736c;
+  font-family: monospace;
+}
+
+.wallet-status {
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  background: #eaf9f0;
+  color: #16a34a;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* ================================
+   DISCONNECT BUTTON
+================================ */
+
+.disconnect-btn {
+  margin-top: 16px;
+
+  padding: 11px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid #f0caca;
+  border-radius: 9px;
+
+  background: #fff7f7;
+  color: #dc2626;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.disconnect-btn:hover {
+  background: #feecec;
+  border-color: #efb4b4;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .settings-page {
+    padding: 20px;
+  }
+
+  .settings-header h1 {
+    font-size: 26px;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+
+  .settings-row {
+    gap: 20px;
+  }
+
+  .settings-row p {
+    max-width: 90%;
+  }
+
+  .wallet-setting {
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .settings-page {
+    padding: 15px;
+  }
+
+  .settings-card {
+    padding: 17px;
+    border-radius: 14px;
+  }
+
+  .settings-title {
+    gap: 10px;
+  }
+
+  .settings-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .settings-title h2 {
+    font-size: 17px;
+  }
+
+  .settings-row h3 {
+    font-size: 14px;
+  }
+
+  .settings-row p {
+    font-size: 12px;
+  }
+
+  .wallet-setting {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wallet-status {
+    margin-top: 5px;
+  }
+}
