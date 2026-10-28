@@ -7,12 +7,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 260px;
-    right: 0;
-    width: calc(100% - 260px);
-    z-index: 90;
+    width: 100%;
     transition: var(--transition-normal);
 }
 
@@ -44,7 +39,7 @@ nav {
 } 
 
 .search-bar i {
-    position: absolute;
+    position: absolute;            
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
@@ -53,7 +48,14 @@ nav {
     pointer-events: none;
     transition: var(--transition-fast);
 }
-
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
 .icon-btn {
     width: 42px;
     height: 42px;
@@ -125,15 +127,12 @@ nav {
 
 @media screen and (max-width: 1024px) {
     nav {
-        margin-left: 80px;
-        width: calc(100% - 80px);
         padding: 0 24px;
     }
 }
 
 @media screen and (max-width: 768px) {
     nav {
-        margin-left: 0;
         width: 100%;
         height: 70px;
         padding: 0 16px;
@@ -146,4 +145,3 @@ nav {
     .search-bar {
         width: 180px;
     }
-}

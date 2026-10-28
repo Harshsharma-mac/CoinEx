@@ -9,10 +9,11 @@ import {
   faWallet,
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "../../../context/ThemeContext";
 import "./setting.css";
 
 const Settings = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const { darkMode, toggleDarkMode } = useTheme();
   const [transactionNotifications, setTransactionNotifications] =
     useState(true);
   const [walletActivity, setWalletActivity] = useState(true);
@@ -49,7 +50,7 @@ const Settings = () => {
             <input
               type="checkbox"
               checked={darkMode}
-              onChange={() => setDarkMode(!darkMode)}
+              onChange={toggleDarkMode}
             />
             <span></span>
           </label>

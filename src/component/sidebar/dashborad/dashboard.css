@@ -37,8 +37,6 @@
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* --- Resets --- */
 * {
     margin: 0;
     padding: 0;
@@ -175,7 +173,6 @@ body {
     flex-direction: column;
     min-width: 0;
     width: 100%;
-    padding-top: 80px;
 }
 
 nav {
@@ -187,12 +184,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 260px;
-    right: 0;
-    width: calc(100% - 260px);
-    z-index: 90;
+    width: 100%;
     transition: var(--transition-normal);
 }
 
@@ -851,8 +843,6 @@ nav {
     }
 
     nav {
-        left: 80px;
-        width: calc(100% - 80px);
         padding: 0 24px;
     }
 
@@ -927,13 +917,11 @@ nav {
     .main-content {
         margin-left: 0;
         width: 100%;
-        padding-top: 70px;
         padding-bottom: 60px;
         /* Space for mobile navigation bar */
     }
 
     nav {
-        left: 0;
         width: 100%;
         height: 70px;
         padding: 0 16px;

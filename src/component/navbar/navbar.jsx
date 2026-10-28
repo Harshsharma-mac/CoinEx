@@ -7,9 +7,12 @@ import {
   faBell,
   faMoon
 } from "@fortawesome/free-solid-svg-icons";
-
+import React, {useState} from 'react'
+import { useTheme } from '../../context/ThemeContext';
 import './navbar.css'
-const navbar = () => {
+const Navbar = () => {
+    const { darkMode, toggleDarkMode } = useTheme();
+    const [searchText, setSearchText] = useState ("");q
   return (
     <div>
        <nav>
@@ -26,10 +29,15 @@ const navbar = () => {
               <FontAwesomeIcon icon={faBell} />
               <span className="badge"></span>
             </div>
-            <div className="icon-btn">
-              <FontAwesomeIcon icon={faMoon} />
+            <div
+              className="icon-btn"
+              onClick={toggleDarkMode}
+              title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+              aria-label={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+            >
+                <FontAwesomeIcon icon={faMoon} />
             </div>
-            <div className="icon-btn">
+            <div className="icon-btn" >
               <FontAwesomeIcon icon={faGear} />
             </div>
             <div className="profile-card">
@@ -45,5 +53,5 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
 

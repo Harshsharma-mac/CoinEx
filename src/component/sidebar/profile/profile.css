@@ -19,12 +19,6 @@
   font-size: 14px;
   color: #77736c;
 }
-
-
-/* =========================
-   MAIN PROFILE CARD
-========================= */
-
 .profile-main-card {
   display: flex;
   align-items: center;
@@ -38,23 +32,17 @@
 
   margin-bottom: 20px;
 }
-
-
 /* Avatar */
 
 .profile-avatar {
-  width: 70px;
-  height: 70px;
-
-  border-radius: 18px;
-
+  width: 55px;
+  height: 55px;
+  border-radius:50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #e8f8ef;
   color: #16a34a;
-
   font-size: 27px;
 }
 
@@ -105,24 +93,16 @@
 
 .edit-profile-btn {
   border: 1px solid #dedbd4;
-
   background: #ffffff;
-
   padding: 10px 15px;
-
   border-radius: 10px;
-
   color: #4d4942;
-
   font-size: 13px;
   font-weight: 600;
-
   cursor: pointer;
-
   display: flex;
   align-items: center;
   gap: 8px;
-
   transition: 0.2s ease;
 }
 
@@ -360,7 +340,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #f2ebff;
   color: #8b5cf6;
 }

@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,27 +13,6 @@ import {
 import "./dashboard.css";
 function dashboard() {
   return (
-      <div className="app-container">
-        <aside className="sidebar">
-          <div className="head">
-            <img src="/logo.png" className="logo" alt="CoinEx Logo"/>
-            <h2>Coin<span>Ex</span></h2>
-          </div>
-        <ul className="nav-links">
-          <li className="active"><a href="/"><FontAwesomeIcon icon={faHouse} />Dashboard</a></li>
-          <li><a href="/wallet"><FontAwesomeIcon icon={faWallet} />Wallet</a></li>
-          <li><a href="/transactions"><FontAwesomeIcon icon={faFile} />Transactions</a></li>
-          <li><a href="/analytics"><FontAwesomeIcon icon={faChartLine} />Analytics</a></li>
-          <li><a href="/profile"><FontAwesomeIcon icon={faUser} />Profile</a></li>
-          <li><a href="/settings"><FontAwesomeIcon icon={faGear} />Settings</a></li>
-          <li className="logout">
-            <a href="#"><span><FontAwesomeIcon icon={faRightFromBracket} />Logout</span></a>
-          </li>
-        </ul>
-      </aside>
-
-      <div className="main-content">
-      
         <main className="content-body">
           <div className="welcome-section">
             <h2>Welcome Back, Harsh! 👋</h2>
@@ -293,8 +272,6 @@ function dashboard() {
             </div>
           </div>
         </main>
-      </div>
-    </div>
   );
 }
 export default dashboard;
